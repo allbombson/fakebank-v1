@@ -6,7 +6,7 @@ An Online Banking Platform Built With Laravel for the purpose of scam baiting (?
 
 Note: Requires composer
 
-### PART 1
+### Part 1
 1. Clone repo.
 
 2. Run `composer install`.
@@ -21,7 +21,15 @@ Note: Requires composer
 
 7. Run `php artisan db:seed` to seed your test database with premade data to get you started.
 
-8. Serve the project via local server.
+8. Serve the project via local server details in Part 2.
+
+### Part 2
+
+1. Set public as your root dir for files.
+
+2. Syslink or Alias /uploads to /storage/app/public/uploads/. EG: Alias /uploads "C:/Users/allbombson/Desktop/XAMPP/htdocs/storage/app/public/uploads/" in my Apache config
+
+
 
 ## Credits
 allbombson (Thomas Lane)
