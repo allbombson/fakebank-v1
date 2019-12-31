@@ -2,8 +2,7 @@
 
 An Online Banking Platform Built With Laravel
 
-
-## Usage
+## Usage - OUT OF DATE
 
 Note: Require composer
 
