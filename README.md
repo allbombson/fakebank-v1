@@ -4,36 +4,25 @@ An Online Banking Platform Built With Laravel for the purpose of scam baiting (?
 
 ## Usage - OUT OF DATE
 
-Note: Require composer
+Note: Requires composer
 
 Installation
-In the command terminal, run the following commands:
 
-``` bash
+1. Clone repo.
 
-$ git clone https://github.com/ambrosethebuild/online-banking.git Online-banking
-$ cd Online-banking/
-$ composer install
-$ php artisan migrate
+2. Run `composer install`.
 
-```
+3. Create a new database for the project.
 
-Open the .env file and set your database credentials
+4. Copy `.env.example` to `.env` and edit, saving environment variables according to local settings (notably, linking `DB_DATABASE` to the database created in Step 3, `DB_USERNAME` and `DB_PASSWORD` to those matching local MySql settings, and `APP_URL` to the addresss of your local server for the project). You also want to set up MAIL_* with ur Mail server settings.
 
-``` bash
-DB_DATABASE=bank
-DB_USERNAME=root
-DB_PASSWORD=
+5. Run `php artisan migrate` to migrate your database for the project to the one u made in step 3.
 
-```
-Then run the migration command
+6. If no `APP_KEY` is present in `.env`, (as per Laravel installation instructions) run `php artisan key:generate`
 
-``` bash
+7. Run `php artisan db:seed` to seed your test database with premade data to get you started.
 
-$ php artisan migrate
-
-```
-
+8. Serve the project via local server.
 
 ## Credits
 allbombson (Thomas Lane)
