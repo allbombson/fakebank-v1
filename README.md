@@ -36,7 +36,7 @@ $ php artisan migrate
 
 
 ## Credits
-
+allbombson (Thomas Lane)
 Ambrose Bako (Who just stole code ive seen 5000 times but at least this one works)
 ## License
 The MIT License (MIT).
