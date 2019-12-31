@@ -6,8 +6,7 @@ An Online Banking Platform Built With Laravel for the purpose of scam baiting (?
 
 Note: Requires composer
 
-Installation
-
+### PART 1
 1. Clone repo.
 
 2. Run `composer install`.
