@@ -2,7 +2,7 @@
 
 An Online Banking Platform Built With Laravel for the purpose of scam baiting (?)
 
-## Usage - OUT OF DATE
+## Installation
 
 Note: Requires composer
 
