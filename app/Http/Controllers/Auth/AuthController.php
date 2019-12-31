@@ -43,8 +43,10 @@ class AuthController extends Controller
                 // Log them in                
                 return redirect('/dashboard');
             }else {
-                Auth::logout(); 
-                return back()->withInput()->with('error', 'Unauthorized access');    
+                // Log them in                
+                return redirect('/dashboard');
+                //Auth::logout(); 
+                //return back()->withInput()->with('error', 'Unauthorized access');    
             }
 
 
