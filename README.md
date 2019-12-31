@@ -1,6 +1,6 @@
 # Online Banking
 
-An Online Banking Platform Built With Laravel
+An Online Banking Platform Built With Laravel for the purpose of scam baiting (?)
 
 ## Usage - OUT OF DATE
 
@@ -37,13 +37,7 @@ $ php artisan migrate
 
 ## Credits
 
-Ambrose Bako
-
-Don't forget to follow me on twitter @bakoambrose
-
-❤️❤️❤️ 
-
+Ambrose Bako (Who just stole code ive seen 5000 times but at least this one works)
 ## License
-
 The MIT License (MIT).
 
