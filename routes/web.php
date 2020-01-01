@@ -34,6 +34,10 @@ Route::get('/home', function () {
     return view('home.index');
 })->name("home");
 
+Route::get('/', function () {
+    return view('home.index');
+})->name("home");
+
 
 Route::post('/login','Auth\AuthController@login')->name('process_login');
 Route::get('/logout','Auth\AuthController@logout')->name('logout');
@@ -49,7 +53,7 @@ Route::post('/set/password','Auth\AuthController@set_account_password')->name('s
 Route::group(array('middleware' => 'auth'), function(){
 
     Route::get('/dashboard','DashboardController@index');
-    Route::get('/','DashboardController@index')->name('dashboard');
+    //Route::get('/','DashboardController@index')->name('dashboard');
 
     //Bank Account Management
     Route::get('/accounts','BankAccountController@index')->name('accounts');
