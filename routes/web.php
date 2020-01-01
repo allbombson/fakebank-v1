@@ -32,7 +32,7 @@ Route::get('/reset/account', function () {
 //Home page
 Route::get('/home', function () {
     return view('home.index');
-})->name("index");
+})->name("home");
 
 
 Route::post('/login','Auth\AuthController@login')->name('process_login');
