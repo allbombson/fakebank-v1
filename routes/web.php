@@ -52,7 +52,7 @@ Route::post('/set/password','Auth\AuthController@set_account_password')->name('s
 
 Route::group(array('middleware' => 'auth'), function(){
 
-    Route::get('/dashboard','DashboardController@index');
+    Route::get('/dashboard','DashboardController@index')->name('dashboard');
     //Route::get('/','DashboardController@index')->name('dashboard');
 
     //Bank Account Management
