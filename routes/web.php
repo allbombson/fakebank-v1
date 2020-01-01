@@ -29,6 +29,10 @@ Route::get('/reset/account', function () {
     return view('auth.customer.reset_password');
 })->name("reset_account");
 
+//Home page
+Route::get('/home', function () {
+    return view('home.index');
+})->name("index");
 
 
 Route::post('/login','Auth\AuthController@login')->name('process_login');
