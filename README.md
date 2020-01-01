@@ -27,7 +27,7 @@ Note: Requires composer
 
 1. Set public as your root dir for files.
 
-2. Syslink or Alias /uploads to /storage/app/public/uploads/. EG: Alias /uploads "C:/Users/allbombson/Desktop/XAMPP/htdocs/storage/app/public/uploads/" in my Apache config
+2. Syslink or Alias /uploads to /storage/app/public/uploads/. EG: Alias /uploads "C:/Users/allbombson/Desktop/XAMPP/htdocs/storage/app/public/uploads/" in my Apache config.
 
 
 
