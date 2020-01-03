@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<?php 
+use App\Models\User;
+if(User::with('country')->find(Auth::id())){
+	$puser = User::with('country')->find(Auth::id());
+	if($puser->picture == ''){
+		$userpicture = '/assets/images/users/1.jpg';
+	}
+	else{
+		$userpicture = $puser->picture;
+	}
+}
+else {
+	$puser = '';
+	$userpicture = '';
+}
+?>
 <html dir="ltr" lang="en">
 
 <head>
