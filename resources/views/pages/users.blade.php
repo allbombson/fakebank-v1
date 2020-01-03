@@ -48,8 +48,8 @@
                                                     <tr>
                                                         <td>{{ $loop->iteration }}</td>
                                                         <td>
-                                                            @if( !empty( $user->profile ) )
-                                                                <img src="{{ $user->profile }}" alt="user" class="rounded-circle" width="31">
+                                                            @if( !empty( $user->picture ) )
+                                                                <img src="{{ $user->picture }}" alt="user" class="rounded-circle" width="31">
                                                             @else
                                                                 <img src="{{ url('') }}/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31">
                                                             @endif
