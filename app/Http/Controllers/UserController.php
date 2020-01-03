@@ -7,12 +7,12 @@ use Spatie\Permission\Models\Role;
 use App\Models\User;
 use App\Models\Country;
 use Auth,DB,Hash,Validator;
-
+use App\Traits\UploadTrait;
 
 class UserController extends Controller
 {
     //
-
+    use UploadTrait;
     public function index(Request $request){
 
         $countries = Country::get();
@@ -140,6 +140,22 @@ class UserController extends Controller
                 $user->country_id = $request->country_id;
                 $user->description = $request->description;
                 $user->address = $request->address;
+                
+                // Check if a profile image has been uploaded
+                if ($request->has('picture')) {
+                    // Get image file
+                    $image = $request->file('picture');
+                    // Make a image name based on user name and current timestamp
+                    $name = str_slug($request->input('name')).'_'.time();
+                    // Define folder path
+                    $folder = '/uploads/user/profile/';
+                    // Make a file path where image will be stored [ folder path + file name + file extension]
+                    $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
+                    // Upload image
+                    $this->uploadOne($image, $folder, 'public', $name);
+                    // Set user profile image path in database to filePath
+                    $user->picture = $filePath;
+                }
                 
                 $user->save();
 
