@@ -31,7 +31,7 @@ Route::get('/reset/account', function () {
 
 //Home page
 Route::get('/','HomeController@index')->name('home');
-Route::get('/home','HomeeController@index')->name('home');
+Route::get('/home','HomeController@index')->name('home');
 
 
 Route::post('/login','Auth\AuthController@login')->name('process_login');
